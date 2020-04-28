@@ -1,14 +1,9 @@
 %% EXPERIMENT No: 10
 
-%{
-    Name: Smit Shah
-    PRN: 17070123090
-    Batch: EB-2
-%}
-
 clc 
 clear all 
 close all
+
 %% Q.1.To plot the step response for P, PI, PD and PID control systems with unity feedback
 
 % Q.1(a) Unity gain feedback system
@@ -18,7 +13,7 @@ D=[1 10 20];
 G=tf(N,D); %open loop transfer function of the system
 H=1; %unity feedback system
 sys=feedback(G,H); %closed loop transfer function of unity feedback system
-figure('Numbertitle','off','Name','Smit_Step response graphs')
+figure('Numbertitle','off','Name','Step response graphs')
 step(sys)
 S=stepinfo(sys)
 
