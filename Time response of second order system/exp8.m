@@ -1,11 +1,5 @@
 %% Experiment No: 8
 
-%{
-    Name: Smit Shah
-    PRN: 17070123090
-    Batch: EB-2
-%}
-
 clc
 clear all
 close all
@@ -19,7 +13,7 @@ rho2=0.7;
 rho3=1.0;
 rho4=1.2;
 
-figure('Name','smit_stepresponse')
+figure('Name','step_response')
 % for zeta=0.25
 theta1=atan(sqrt(1-rho1^2)/rho1);
 wd1=wn*sqrt(1-rho1^2);
@@ -72,6 +66,7 @@ S2=stepinfo(sys2)
 S3=stepinfo(C3)
 % for zeta=1.2
 S4=stepinfo(C4)
+
 
 %% Conclusion
 
