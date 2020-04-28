@@ -1,16 +1,12 @@
 %% Experiment No: 11
 
-% Name: Smit Shah
-% PRN: 17070123090
-% Batch: EB-2
-
 clc
 clear all
 close all
 
 %% Q1. Find the root locus for the transfer function GH(s)= k/s(s+2)(s^2+2s+5)
 
-figure("Name","Smit_Root locus")
+figure("Name","Root locus")
 f1=[1];
 f2=[1 0];
 f3=[1 2];
@@ -21,7 +17,7 @@ rlocus(G)
 
 %% Q2. Find the root locus for the transfer function GH(s)= k/(s+3)(s+4)(s^2+2s+17)
 
-figure("Name","Smit_Root locus_1")
+figure("Name","Root locus_1")
 f5=[1];
 f6=[1 3];
 f7=[1 4];
