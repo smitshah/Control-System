@@ -1,34 +1,3 @@
-%% Experiment No: 3
-
-%{
-    Name:- Smit Shah
-    PRN:- 17070123090
-    Batch:- EB-2
-%}
-
-clc
-clear all
-close all
-
-%% Q1 Visualize Impulse signal on scope using two step signal 
-
-% This question is to be done on Simulink.
-
-%% Q2 Visualize Impulse, step and ramp signal on scope
-
-% (i) G(s)=1/s
-% (ii) G(s)=1/s+1
-% (iii) G(s)=s+4/s^2+3.5s+6
-
-% This question is to be done on Simulink.
-
-%% Q3 Visualize and Compare step response on same scope
-
-% (i) G(s)=1/4s+1  and  H(s)=1/2s+1
-% (ii) G(s)=1/2s+1  and  H(s)=3/2s+1
-
-% This question is to be done on Simulink.
-
 %% Q4 Visualize Impulse and Step response on graph 
 
 % (i) G(s)=1/s
@@ -58,7 +27,6 @@ impulse(sys3)
 %% Matlab Functions
 
 %{
-
 1. Impulse:- It calculates the unit impulse response of a linear system.
 The impulse response is response to a Dirac input delta(t) for continuous time
 systems and to unit pulse at t=0 for discrete time systems. Zero initial
@@ -91,8 +59,8 @@ t=Tfinal. Express Tfinal in the system time units, specified in the
 TimeUnit property of sys.  For discrete-time systems with unspecified
 sample time (Ts = -1), step interprets Tfinal as the number of sampling
 periods to simulate.
-
 %}
+
 
 %% Conclusion
 
