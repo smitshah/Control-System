@@ -1,11 +1,5 @@
 %% Experiment No: 7
 
-%{
-    Name: Smit Shah
-    PRN: 17070123090
-    Batch: EB-2
-%}
-
 clc
 clear all
 close all
@@ -16,11 +10,11 @@ T=0.2;
 T1=0.5;
 
 % (i) Step Wave
-figure('Name', 'Smit_step_wave')
-sim('smit_e7_1_1')
+figure('Name', 'step_wave')
+sim('e7_1_1')
 plot(time,step,'LineWidth',2)
 hold on
-sim('smit_e7_1_2')
+sim('e7_1_2')
 plot(time,step,'-.','LineWidth',2)
 xlabel('Time')
 ylabel('Amplitude')
@@ -29,11 +23,11 @@ legend('T=0.2','T1=0.5')
 axis([0 7 -0.2 1.2])
 
 % (ii) Ramp Wave
-figure('Name', 'Smit_ramp_wave')
-sim('smit_e7_1_1')
+figure('Name', 'ramp_wave')
+sim('e7_1_1')
 plot(time,ramp,'LineWidth',2)
 hold on
-sim('smit_e7_1_2')
+sim('e7_1_2')
 plot(time,ramp,'-.','LineWidth',2)
 xlabel('Time')
 ylabel('Amplitude')
@@ -42,11 +36,11 @@ legend('T=0.2','T1=0.5')
 axis([-1 6 -0.2 1.2])
 
 % (iii) Impulse Wave
-figure('Name', 'Smit_impulse_wave')
-sim('smit_e7_1_1')
+figure('Name', 'impulse_wave')
+sim('e7_1_1')
 plot(time,impulse,'LineWidth',2)
 hold on
-sim('smit_e7_1_2')
+sim('e7_1_2')
 plot(time,impulse,'-.','LineWidth',2)
 xlabel('Time')
 ylabel('Amplitude')
@@ -63,15 +57,15 @@ rho3=1;
 rho4=2;
 
 % (i) Step Wave
-figure('Name', 'Smit_step_wave')
-sim('smit_e7_2_1')
+figure('Name', 'step_wave')
+sim('e7_2_1')
 plot(time,step,'LineWidth',2)
 hold on
-sim('smit_e7_2_2')
+sim('e7_2_2')
 plot(time,step,'-.','LineWidth',2)
-sim('smit_e7_2_3')
+sim('e7_2_3')
 plot(time,step,'--','LineWidth',2)
-sim('smit_e7_2_4')
+sim('e7_2_4')
 plot(time,step,':','LineWidth',2)
 xlabel('Time')
 ylabel('Amplitude')
@@ -80,15 +74,15 @@ legend('rho=0','rho2=0.5','rho3=1','rho4=2')
 axis([0 7 -0.2 2.2])
 
 % (ii) Ramp Wave
-figure('Name', 'Smit_ramp_wave')
-sim('smit_e7_2_1')
+figure('Name', 'ramp_wave')
+sim('e7_2_1')
 plot(time,ramp,'LineWidth',2)
 hold on
-sim('smit_e7_2_2')
+sim('e7_2_2')
 plot(time,ramp,'-.','LineWidth',2)
-sim('smit_e7_2_3')
+sim('e7_2_3')
 plot(time,ramp,'--','LineWidth',2)
-sim('smit_e7_2_4')
+sim('e7_2_4')
 plot(time,ramp,':','LineWidth',2)
 xlabel('Time')
 ylabel('Amplitude')
@@ -97,21 +91,22 @@ legend('rho=0','rho2=0.5','rho3=1','rho4=2')
 axis([-1 7 -2 8])
 
 % (iii) Impulse Wave
-figure('Name', 'Smit_impulse_wave')
-sim('smit_e7_2_1')
+figure('Name', 'impulse_wave')
+sim('e7_2_1')
 plot(time,impulse,'LineWidth',2)axis([-1 7 -0.0001 0.0001])
 hold on
-sim('smit_e7_2_2')
+sim('e7_2_2')
 plot(time,impulse,'-.','LineWidth',2)
-sim('smit_e7_2_3')
+sim('e7_2_3')
 plot(time,impulse,'--','LineWidth',2)
-sim('smit_e7_2_4')
+sim('e7_2_4')
 plot(time,impulse,':','LineWidth',2)
 xlabel('Time')
 ylabel('Amplitude')
 title('Impulse Response of Second order system')
 legend('rho=0','rho2=0.5','rho3=1','rho4=2')
 axis([-1 7 -0.00008 0.00008])
+
 
 %% Conclusion
 
