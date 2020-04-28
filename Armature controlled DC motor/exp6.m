@@ -1,11 +1,5 @@
 %% EXPERIMENT NO: 6
 
-%{
-     Name: Smit Shah
-     PRN: 17070123090
-     Batch: EB-2
-%}
-
 clc
 clear all
 close all
@@ -17,18 +11,19 @@ J=0.01;
 B=0.1;
 R=1;
 Kt=0.01;
-sim('smit_e6')
-figure('name','Smit_step_response')
+sim('e6')
+figure('name','step_response')
 plot(time,Speed)
 xlabel('Time')
 ylabel('Speed')
 title('DC motor with Step wave as input')
 axis([0 10 0 0.2])
-figure('name','Smit_ramp_response')
+figure('name','ramp_response')
 plot(time,Speed1)
 xlabel('Time')
 ylabel('Speed')
 title('DC motor with Ramp wave as input')
+
 
 %% Conclusion
 
