@@ -1,14 +1,8 @@
 %% Experiment No.: 2
 
-%{
-   Name: Smit Shah
-   PRN: 17070123090
-   Batch: EB-2
-%}
 clc
 clear all
 close all
-
 
 %% Q1. Generte tf and find zeros, poles and gain.
 
