@@ -1,11 +1,5 @@
 %% Experiment No: 9
 
-%{
-    Name: Smit Shah
-    PRN: 17070123090
-    Batch: EB-2
-%}
-
 clc
 clear all
 close all
@@ -17,7 +11,7 @@ f2=[1 2];
 f3=[1 3];
 GH1=tf(f1,conv(f2,f3))   %Open Loop Transfer Function
 R1=feedback(GH1,1)  %Close Loop Transfer Function
-figure('Name', 'Smit_Impulse and Step Response of close loop transfer function')
+figure('Name', 'Impulse and Step Response of close loop transfer function')
 subplot(2,1,1)
 impulse(R1)
 title('Impulse Response of close loop transfer function')
@@ -39,7 +33,7 @@ f7=[1 3];
 A1=conv(f5,f6);
 GH2=tf(f4,conv(A1,f7))   %Open Loop Transfer Function
 R2=feedback(GH2,1)  %Close Loop Transfer Function
-figure('Name', 'Smit_Impulse and Step Response of close loop transfer function')
+figure('Name', 'Impulse and Step Response of close loop transfer function')
 subplot(2,1,1)
 impulse(R2)
 title('Impulse Response of close loop transfer function')
@@ -63,7 +57,7 @@ f12=[1 3];
 A2=conv(f10,f11);
 GH3=tf(conv(f8,f9),conv(A2,f12))   %Open Loop Transfer Function
 R3=feedback(GH3,1)  %Close Loop Transfer Function
-figure('Name', 'Smit_Impulse and Step Response of close loop transfer function')
+figure('Name', 'Impulse and Step Response of close loop transfer function')
 subplot(2,1,1)
 impulse(R3)
 title('Impulse Response of close loop transfer function')
@@ -87,7 +81,7 @@ f18=[1 8];
 f19=[K1];
 t=0:0.01:5;
 u=t;
-figure('Name', 'Smit_Ramp Response of close loop transfer function')
+figure('Name', 'Ramp Response of close loop transfer function')
 A3=conv(f13,f14);
 A4=conv(f16,f17);
 GH4=tf(conv(A3,f15),conv(A4,f18))   %Open Loop Transfer Function
@@ -104,6 +98,7 @@ title('Unit Ramp Response of close loop transfer function with K and without K')
 xlabel('Time')
 ylabel('Amplitude')
 hold off
+
 
 %% Conclusion
 
