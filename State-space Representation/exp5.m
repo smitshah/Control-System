@@ -1,11 +1,5 @@
 %% Experiment No.: 5
 
-%{
-    Name:- Smit Shah
-    PRN:- 17070123090
-    Batch:- EB-2
-%}
-
 clc
 clear all
 close all
@@ -22,11 +16,12 @@ printsys(Num,Den,'s')
 
 %% Q3. Visualize the step response of the system described by state-space representation in above question using SIMULINK
 
-sim('smit_q3')
+sim('q3')
 plot(time,step_response)
 title('step response of second order system with real poles')
 xlabel('Time(seconds)')
 ylabel('Amplitude')
+
 %% Conclusion
 
 %{
