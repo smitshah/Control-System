@@ -1,11 +1,5 @@
 %% Experiment No: 4
 
-%{
-    Name:- Smit Shah
-    PRN:- 17070123090
-    Batch:- EB-2
-%}
-
 clc
 clear all
 close all
@@ -26,7 +20,7 @@ step(X)
 %% Q3. Design Block diagram in Simulink
 
 figure
-sim('e4_3')
+sim('e4')
 plot(time, step_response)
 
 %% Conclusion
